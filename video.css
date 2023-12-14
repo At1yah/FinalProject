@@ -32,12 +32,11 @@ grid-template-rows: 1fr;
 	padding-bottom: 1000px;
 }
 
-#hoverVid{
-	visibility: hidden;
+.plex video {
+    visibility: hidden;
 }
 
-
-.plex:hover #hoverVid{
+.plex:hover video {
     visibility: visible;
 }
 

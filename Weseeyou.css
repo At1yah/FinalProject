@@ -1,0 +1,196 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+grid-template-rows: 1fr;*/
+  gap: 40px;
+  margin-left: 0px; 
+  padding: 0px 10px;
+  width: 100%;
+  height:100%;
+}
+
+.background{
+  width: 100px;
+   z-index: 1;
+   grid-column: 5/6;
+}
+
+#decorative-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.sidebar{
+  grid-column: 1/2;
+  background-color: black;
+  color: white;
+  grid-row: 1/6;
+  padding-top: 50px;
+  padding-bottom: 135px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: -18px;
+  margin-top: -10px;
+  margin-right: -100px;
+  z-index: 2;
+  line-height: 2;
+  font-size: 20px;
+}
+
+  .button {
+    display: flex;
+    display: grid;
+    grid-column: 1/3;
+    margin-top: -80px;
+    align-content: center;
+    margin-left: 5vw;
+    height: 60px;
+    z-index: 5; 
+    width: 200px;
+    background-color: white; 
+    color: #000000; 
+    padding: 10px 20px;
+    cursor: pointer; 
+    border: lightgrey solid;
+    font-size: 20px;
+
+}
+.Eyescamera{
+  z-index: 5;
+  grid-column: 5/6;
+  margin-top: 12vh;
+  grid-row: 1;
+  width: 70%;
+
+}
+
+.Poster{
+  z-index: 4;
+  grid-column: 3/4;
+  margin-top: 10vh;
+  margin-left: 8vw;
+  grid-row: 1;
+  width: 70%;
+
+}
+.bunchadem{
+  z-index: 3;
+  grid-column: 3/5;
+  margin-left: -2vw;
+  grid-row: 1;
+  width: 40%;
+}
+
+.Eyeball {
+  z-index: 6;
+  grid-column: 2/3;
+  grid-row: 2;
+  width: 70%;
+margin-left: 10vw;
+margin-top: -6vh}
+
+
+.book{
+  z-index: 5;
+  grid-column: 4/5;
+  grid-row: 2;
+  margin-top: -9vh;
+  width: 70%;
+}
+.eyeposter{
+   z-index: 3;
+  grid-column: 2/3;
+  margin-top: 20vh;
+  margin-left: 8vw;
+  grid-row: 1;
+  width: 70%;}
+
+.barcode{
+z-index: 8;
+  grid-column: 5/6;
+  margin-top: -15vh;
+  margin-left: -2vw;
+  grid-row: 2;
+  width: 100%;
+
+}
+.scan1{
+z-index: 6;
+  grid-column: 5/6;
+  margin-top: -30vh;
+  margin-left: -18vw;
+  grid-row: 2;
+  width: 100%;
+}
+.through{
+z-index: 6;
+  grid-column: 4/6;
+  margin-top: 0;
+  margin-left: 3vw;
+  grid-row: 1;
+  width: 45%;
+}
+.connected{
+z-index: 2;
+  grid-column: 3/4;
+  margin-top: 0;
+  margin-left: 5vw;
+  grid-row: 2;
+  width: 90%;
+}
+.pagelift{
+  z-index: 8;
+  grid-column: 1/2;
+  width: 15%;
+  grid-row: 3;
+  margin-top: -5vh;
+}
+
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
+/* Apply the wiggle animation to the images when hover */
+.Eyescamera,
+.Poster,
+.bunchadem,
+.Eyeball,
+.book,
+.eyeposter,
+.barcode,
+.scan1,
+.through,
+.connected {
+  transition: transform 0.5s;
+}
+
+.Eyescamera:hover,
+.Poster:hover,
+.bunchadem:hover,
+.Eyeball:hover,
+.book:hover,
+.eyeposter:hover,
+.barcode:hover,
+.scan1:hover,
+.through:hover,
+.connected:hover {
+  animation: wiggle 0.5s ease-in-out;
+}
+
+
+
+

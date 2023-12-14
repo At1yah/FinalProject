@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>I am your lord</title>
+</head>
+
+<body>
+    <div class="container">
+        <p id="demo"></p>
+        <div id="buttons" style="display:none;">
+            <button class="button1"onclick="alert('Hahaha you thought you had a choice?')">Leave</button>
+           <a href ="Loadingpage.html" style="text-decoration:none"class="button2"> <button class="button2" onclick="link('button2')">  Stay  </a> </button>
+        </div>
+
+        <script>
+            var i = 0;
+            var l = 0;
+            var textLines = [
+                "Hello.",
+                "I am so glad you could make it.",
+                "Do you know why you are here?",
+                "Oh... you do not?",
+                "You are here to see",
+                "See your true purpose",
+                "You are here to serve",
+                "Serve who you ask...                  ",
+                "You will soon find out",
+                "----------------------------------------",
+                "Now, what will you do next?"
+            ];
+
+            var speed = 40;
+
+            typeWriter();
+
+            function typeWriter() {
+                console.log("LINE: " + l + " - CHAR: " + i);
+
+                var currentLineTextLength = textLines[l].length;
+                if (i < currentLineTextLength) {
+                    document.getElementById("demo").innerHTML += textLines[l].charAt(i);
+                    i++;
+                    setTimeout(typeWriter, speed);
+                } else if (i == currentLineTextLength) { // We have reached the end of a line
+                    if (l < textLines.length - 1) {
+                        i = 0;
+                        l++;
+                        document.getElementById("demo").innerHTML += "<br>";
+                        setTimeout(typeWriter, speed * 30);
+                    } else {
+                        showButtons(); // Show the buttons after the last line is written
+                    }
+                }
+            }
+
+            function showButtons() {
+                document.getElementById("buttons").style.display = "block";
+            }
+
+            function buttonClicked(buttonId) {
+                alert("Button " + buttonId + " clicked!");
+               
+            }
+        </script>
+    </div>
+</body>
+</html>

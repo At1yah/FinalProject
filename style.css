@@ -1,0 +1,40 @@
+body {
+background-color: black;
+color: #51a33b;
+line-height: 2;
+font-size: 20px;
+font-family: 'AGoblinAppears!'}
+
+.container{
+margin-left: 20px }
+
+.button1{ 
+    background-color: #000000; 
+    border-color: #51a33b; 
+    padding: 10px 25px; 
+    cursor: pointer;
+    color: #51a33b;
+    font-family: 'AGoblinAppears!';
+}
+.button1:hover {
+  background-color: #51a33b;
+  color: white;
+}
+
+.button2{ 
+    background-color: #000000; 
+    border-color: #51a33b; 
+    padding: 10px 25px; 
+    cursor: pointer;
+    color: #51a33b;
+    font-family: 'AGoblinAppears!';
+}
+.button2:hover {
+  background-color: #51a33b;
+  color: white;
+}
+
+@font-face {
+font-family: 'AGoblinAppears!';
+src: url(AGoblinAppears-o2aV.ttf);
+}
